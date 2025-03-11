@@ -1,0 +1,7 @@
+.env
+.env.exp
+.gitlab-ci.yml
+tests
+storage/logs
+config/database.php
+config/admin.php

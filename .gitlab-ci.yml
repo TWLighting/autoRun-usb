@@ -1,0 +1,8 @@
+developer:
+    stage: deploy
+    only:
+        - develop
+    script:
+        - rsync -arv --no-g --no-p --no-t --delete --exclude-from=/home/gitlab-runner/exclude-file . /var/www/autoRun-usb/
+    tags:
+        - developer
